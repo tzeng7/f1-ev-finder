@@ -161,6 +161,20 @@ pytest tests/
 
 Tests use recorded fixtures (VCR cassettes) to avoid live network calls. Do not mock sportsbook API responses with hardcoded values — use cassette recordings to ensure realistic data shapes.
 
+## Maintaining the README
+
+**After every incremental change, update `README.md` to reflect what changed.** Specifically:
+
+- New data source or scraper → add a row to the Data Sources or Technologies table
+- New market type → add to the Market Types table
+- New CLI flag or command → update the Usage section
+- Change to EV math or vig method → update the EV Math section
+- Change to project structure (new files/modules) → update the Project Structure tree
+- Change to output schema → update the Output JSON Schema block
+- New limitation discovered → add to Limitations & Notes
+
+The README is the canonical human-readable reference. Keep it accurate and in sync with the code.
+
 ## Conventions
 
 - Python 3.11+
